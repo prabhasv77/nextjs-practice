@@ -1,0 +1,22 @@
+:root {
+  --background-color: #fff;
+  --text-color: #000;
+  --logo-filter: none; /* Default (light mode) */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #000;
+    --text-color: #fff;
+    --logo-filter: invert(1); /* Dark mode */
+  }
+}
+.logo {
+  filter: var(--logo-filter);
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color); /* Use global variable */
+  color: var(--text-color); /* Use global variable */
+}

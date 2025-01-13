@@ -1,0 +1,31 @@
+.header {
+  background-color: var(--background-color); /* Dynamically set */
+  color: var(--text-color); /* Dynamically set */
+  padding: 0.4rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: small;
+}
+
+.logo {
+  height: 20px;
+  width: auto;
+  filter: var(--logo-filter); /* Dynamically apply filter */
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.link {
+  color: var(--text-color); /* Dynamically set */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.separator {
+  color: var(--text-color); /* Dynamically set */
+}

@@ -1,0 +1,47 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+}
+
+.videoContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.heroVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video fills the hero section */
+}
+
+.heroContent {
+  z-index: 1; /* Ensures the content stays above the video */
+  text-align: center;
+  padding: 1rem;
+}
+
+.heroButton {
+  padding: 0.8rem 1.5rem;
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.heroButton:hover {
+  background-color: #005bb5;
+}
