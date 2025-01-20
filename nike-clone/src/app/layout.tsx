@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Arvo,
+  Bebas_Neue,
+  Kanit,
+  Limelight,
+} from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -10,6 +17,32 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const arvo = Arvo({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-arvo",
+});
+
+const bebasNeue = Bebas_Neue({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-bebas-neue",
+});
+
+const kanit = Kanit({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "500", "600", "700", "900"],
+  style: ["normal", "italic"],
+  variable: "--font-kanit",
+});
+
+const limelight = Limelight({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-limelight",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +58,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${arvo.variable} ${bebasNeue.variable} ${kanit.variable} ${limelight.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>

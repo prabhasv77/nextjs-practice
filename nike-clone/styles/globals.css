@@ -11,8 +11,8 @@
     --logo-filter: invert(1); /* Dark mode */
   }
 }
-.logo {
-  filter: var(--logo-filter);
+* {
+  box-sizing: border-box;
 }
 body {
   margin: 0;

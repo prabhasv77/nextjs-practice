@@ -1,16 +1,32 @@
-import styles from "../../styles/Home.module.css";
-
-export default function HeroSection() {
+import React from "react";
+import styles from "../../styles/HeroSection.module.css";
+import Button from "../../public/common/Button";
+const HeroSection = () => {
   return (
     <>
-      <section className={styles.hero}>
-        <div className={styles.videoContainer}>
-          <video className={styles.heroVideo} autoPlay loop muted playsInline>
-            <source src="/assets/videos/hero-clip.mp4" type="video/mp4" />
-            Your Browser doesn&apos;t support the video tag.
-          </video>
+      <div className={styles["hero-video"]}>
+        <video
+          src="/assets/videos/hero-clip.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className={styles["video"]}
+        ></video>
+      </div>
+      <div className={styles["hero-section-content"]}>
+        <h2>RACE THE NIGHT AWAY</h2>
+        <p>
+          Run until you see the stars at the Nike After Dark Tour, a race series
+          powered by women.
+        </p>
+        <div className={styles["hero-section-buttons"]}>
+          <Button text="Register Now" className="button-color-black" />
+          <Button text="Shop Running" className="button-color-black" />
         </div>
-      </section>
+      </div>
     </>
   );
-}
+};
+
+export default HeroSection;
