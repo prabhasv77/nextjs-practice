@@ -24,8 +24,8 @@ const TrendingCards: readonly Card[] = [
 const Trending: React.FC = () => {
   return (
     <>
+      <div className={styles.heading}>Trending</div>
       <div className={styles.container}>
-        <div>Trending</div>
         {TrendingCards.map((card, index) => (
           <div key={index} className={styles.card}>
             <img src={card.image} alt={card.title} className={styles.image} />
