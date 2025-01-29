@@ -1,7 +1,10 @@
+"use client";
 import React from "react";
+import { useRouter } from "next/navigation";
 import styles from "../../styles/HeroSection.module.css";
 import Button from "../../public/common/Button";
 const HeroSection = () => {
+  const router = useRouter();
   return (
     <>
       <div className={styles["hero-video"]}>
@@ -22,7 +25,11 @@ const HeroSection = () => {
         </p>
         <div className={styles["hero-section-buttons"]}>
           <Button text="Register Now" className="button-color-black" />
-          <Button text="Shop Running" className="button-color-black" />
+          <Button
+            text="Shop Running"
+            className="button-color-black"
+            onClick={() => router.push("/shop")}
+          />
         </div>
       </div>
     </>
