@@ -1,43 +1,35 @@
 .card {
-  border: 1px solid #ddd;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  text-align: start;
 }
 
 .image {
   width: 100%;
-  height: 200px;
+  height: 300px;
+  transform: scale(1.01);
+  image-rendering: crisp-edges;
   object-fit: cover;
-  border-radius: 5px;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .title {
   font-size: 1.2rem;
-  font-weight: bold;
-  margin-top: 10px;
+  font-weight: normal;
+  margin-top: 5px;
 }
 
 .price {
-  color: #ff5733;
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.description,
-.color,
-.size {
-  font-size: 0.9rem;
-  color: #555;
-}
-
-.sale {
-  background: red;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-weight: bold;
-  display: inline-block;
+  color: #000000;
   margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.description {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #666;
+}
+.sale {
+  color: rgb(168, 100, 4);
+  font-weight: bold;
+  margin-top: 5px;
 }

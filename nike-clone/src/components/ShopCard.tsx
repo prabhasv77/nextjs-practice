@@ -20,11 +20,9 @@ const ShopCard: React.FC<{ item: Item }> = ({ item }) => {
       <h3 className={styles.title}>
         {item.name} - {item.model}
       </h3>
-      <p className={styles.price}>${item.price}</p>
       <p className={styles.description}>{item.description}</p>
-      <p className={styles.color}>Color: {item.color}</p>
-      <p className={styles.size}>Sizes: {item.size}</p>
-      {item.on_sale ? <span className={styles.sale}>On Sale</span> : null}
+      {item.on_sale ? <p className={styles.sale}>On Sale</p> : null}
+      <p className={styles.price}>&#8377; {item.price}</p>
     </div>
   );
 };

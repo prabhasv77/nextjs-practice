@@ -31,8 +31,6 @@ const ShopPage = memo(() => {
       <Navbar />
       <Banner />
       <div>
-        <h1>Shop Page</h1>
-        <p>Explore our latest collection of shoes!</p>
         {loading && <p>Loading Inventory...</p>}
         {error && <p>Error: {error}</p>}
         <div className={styles.grid}>
